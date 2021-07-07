@@ -12,6 +12,6 @@
         "altorouter/altorouter": "^1.2"
     },
     "autoload": {
-        "psr-4": {"Pokedex\\": "app/"}
+        "psr-4": {"App\\": "app/"}
     }
 }
