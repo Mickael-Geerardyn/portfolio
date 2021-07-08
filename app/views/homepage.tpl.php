@@ -1,15 +1,18 @@
-<!-- section contenant l'ensemble des cartes pokemon -->
-<section>
     <!-- Pokemon card content -->
-    <div>
-        <!-- image content div -->
-        <div>
-            <img>
+    <div class="cards-grid">
+        <!-- div image content-->
+        <?php foreach($viewVars as $pokemon): ?>
+        <div class="card">
+        <div class="picture-card">
+            <picture>
+                <img class="image" alt="image du pokemon" src="<?= $assetsBaseUri ?>img/<?= $pokemon->getNumero() ?>.png"/>
+            </picture>
         </div>
-        <!-- title content div -->
-        <div>
-            <h2>#1 Bulbizarre</h2>
+        <!-- div title content -->
+        <div class="title">
+            <h2 class="title-name">#<?= $pokemon->getNumero() ?> <?= $pokemon->getNom() ?></h2>
         </div>
+        </div>
+        <?php endforeach; ?>
     </div>
-</section>
     

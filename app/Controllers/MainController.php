@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use App\Models\Pokemon;
+
 // On crée le Controller principal
 
 class MainController extends CoreController {
@@ -13,7 +15,11 @@ class MainController extends CoreController {
      */
     public function home(){
 
-        $this->show('homepage');
+        $pokemonModel = new Pokemon();
+
+        $allPokemon = $pokemonModel->findAllPokemon();
+
+        $this->show('homepage', $allPokemon);
     }
 
     /**

@@ -19,6 +19,18 @@ class Pokemon extends CoreModel {
     private $vitesse;
     private $numero;
 
+    public function findAllPokemon(){
+        $sql = 'SELECT * FROM `pokemon`';
+
+        $pdo = Database::getPDO();
+
+        $pdoStatement = $pdo->query($sql);
+
+        $results = $pdoStatement->fetchAll(PDO::FETCH_CLASS, self::class);
+
+        return $results;
+    }
+
     /**
      * Get the value of nom
      */ 

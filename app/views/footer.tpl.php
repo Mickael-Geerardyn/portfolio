@@ -1,5 +1,5 @@
     </main>
-    <footer>
+    <footer id="footer">
       <div>
         <p>Copyright &copy; Pokedex</p>
       </div>
