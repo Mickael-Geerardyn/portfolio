@@ -9,7 +9,7 @@ use PDO;
 // Class qui représente la table pokemon en BDD. L'ID de cette table est géré par le CoreModel
 class Pokemon extends CoreModel {
 
-    // Propriétés représentant chaque colonne de la table en BDD. Chaque propriété prendre un getter permettant d'insérer en BDD une valeur et un setter permettant d'aller chercher une info en BDD
+    // Propriétés représentant chaque colonne de la table en BDD. Chaque propriété prend un getter permettant d'insérer en BDD une valeur et un setter permettant d'aller chercher une info en BDD
     private $nom;
     private $pv;
     private $attaque;

@@ -9,7 +9,7 @@ $router = new AltoRouter();
 // On fournit à Altorouter la base de l'url qui reste toujours la même et qui ne doit donc pas être comparée mais seulement utilisée. Pour se faire, on utilise la méthode setBasePath de l'objet Altorouter. On lui fournit la variable globale php $_SERVER à la clé 'BASE_URI' qui contient la route fixe. La valeur de $_SERVER['BASE_URI'] est donnée par le fichier .htaccess.
 if (array_key_exists('BASE_URI', $_SERVER)) {
     $router->setBasePath($_SERVER['BASE_URI']);
-}
+};
 
 // On créé ensuite les routes du site
 $router->map(
