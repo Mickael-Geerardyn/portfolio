@@ -10,13 +10,12 @@
 <body id="body">
     <!-- header include navigation bar -->
     <header id="header">
-        <!-- navigation bar -->
         <div class="nav-bar">
+        <h2 class="pokedex"><a href="#">Pokédex</a></h2>
             <nav>
                 <ul>
-                    <li><a href="#">Pokedex</a></li>
-                    <li><a href="#">Liste</a></li>
-                    <li><a href="#">Types</a></li>
+                    <li class="list"><a href="#">Liste</a></li>
+                    <li class="types"><a href="#">Types</a></li>
                 </ul>
             </nav>
         </div>

@@ -17,9 +17,10 @@ class MainController extends CoreController {
 
         $pokemonModel = new Pokemon();
 
-        $allPokemon = $pokemonModel->findAllPokemon();
+        $allPokemons = $pokemonModel->findAllPokemon();
 
-        $this->show('homepage', $allPokemon);
+
+        $this->show('homepage', $allPokemons);
     }
 
     /**

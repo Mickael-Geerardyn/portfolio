@@ -1,0 +1,39 @@
+#body {
+    background-color: #c14040;
+}
+
+#header {
+    background-color: #efe3e3;
+    border-radius: 1rem;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.nav-bar nav {
+    
+}
+
+.nav-bar ul {
+    display: flex;
+    padding: 0rem;
+}
+
+.pokedex {
+    font-size: 1rem;
+}
+
+.pokedex a {
+    text-decoration: none;
+}
+
+.nav-bar li {
+    list-style: none;
+}
+
+.nav-bar li a {
+    text-decoration: none;
+}
