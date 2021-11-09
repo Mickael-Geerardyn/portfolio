@@ -14,7 +14,7 @@ class CoreController {
      */
     public function show($viewName, $viewVars=[]){
         
-        $viewVars['assetsBaseUri'] = $_SERVER['BASE_URI'].'/assets/';
+        $viewVars['assetsBaseUri'] = '/assets/';
         extract($viewVars);
         // $viewVars est déclaré à vide ce qui signifie qu'il est optionnel. Il permet d'être utilisé dans chaque fichier de vue
         require_once __DIR__ . '/../views/header.tpl.php';

@@ -1,5 +1,10 @@
 <?php
 
+// Affichage des erreurs sur la page (Fichier php.ini également modifié à la ligne : display_errors = on)
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 // On inclut l'autoloader qui permet de réécrire les routes passées dans l'url
 require __DIR__ . '/../vendor/autoload.php';
 
